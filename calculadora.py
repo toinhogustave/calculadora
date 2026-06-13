@@ -20,6 +20,11 @@ elif opcao==4:
     b=int(input('outro valor:'))
     print(f'a divisão é:{a/b}')
 elif opcao==5:
-    fluxo(a,b)
+    print("socorro")
+
 elif opcao==6:
-    queda(a,b)
+    a=int(input('digite a velocidade do objeto:'))
+    b=int(input('digite a inclinaçao em graus do objeto:'))
+    r=(b*3.14159)/90
+    f=(r-r*r*r/6 + r*r*r*r*r/120)
+    print(f'a posiçao de queda com 10 m/s para a gravidade é:{(a*a*f)/10:.2f} metros')
