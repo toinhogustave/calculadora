@@ -18,6 +18,9 @@ elif opcao==3:
 elif opcao==4:
     a=int(input('digite um valor:'))
     b=int(input('outro valor:'))
+    while b<=0:
+        print("nao")
+        b=float(input('digite o outro valor:'))
     print(f'a divisão é:{a/b}')
 elif opcao==5:
     a=float(input('digite o valor do produto:'))
