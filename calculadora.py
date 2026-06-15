@@ -37,7 +37,18 @@ elif opcao==5:
         print(f"o troco é:\ncedulas:{r}\nmoedas:{c}")
 elif opcao==6:
     a=int(input('digite a velocidade do objeto:'))
+    while a<=0:
+        print("nao")
+        a=float(input('digite o velocidade do objeto:'))
     b=int(input('digite a inclinaçao em graus do objeto:'))
+    while b<=0:
+        print("nao")
+        b=float(input('digite a inclinaçao em graus do objeto:'))
+    c=int(input('digite o tempo em que o objeto ficou no ar:'))
+    while c<=0:
+        print("nao")
+        c=float(input('digite a inclinaçao em graus do objeto:'))    
     r=(b*3.14159)/90
+    x=a*r*c
     f=(r-r*r*r/6 + r*r*r*r*r/120)
-    print(f'a posiçao de queda com 10 m/s para a gravidade é:{(a*a*f)/10:.2f} metros')
+    print(f'a posiçao de queda com 10 m/s para a gravidade é:{(a*a*f)/10:.2f} metros\n O lançamento horizontal é:{x:.2f} metros')
