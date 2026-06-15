@@ -21,14 +21,20 @@ elif opcao==4:
     print(f'a divisão é:{a/b}')
 elif opcao==5:
     a=float(input('digite o valor do produto:'))
+    while a<=0:
+        print("nao")
+        a=float(input('digite o valor do produto novamente:'))
     b=float(input('insira o pagamento:'))
+    while b<=0:
+        print("nao")
+        b=float(input('digite o valor do pagamento novamente:'))
     if b<a:
-            print("nao é possvel pagar,dinheiro não suficeinte")
+        print("nao é possvel pagar,dinheiro não suficiente")
     else:
-         j=b-a
-         r= int(j)
-         c = round((j - r) * 100)
-         print(f"o troco é:\ncedulas:{r}\nmoedas:{c}")
+        j=b-a
+        r= int(j)
+        c = round((j - r) * 100)
+        print(f"o troco é:\ncedulas:{r}\nmoedas:{c}")
 elif opcao==6:
     a=int(input('digite a velocidade do objeto:'))
     b=int(input('digite a inclinaçao em graus do objeto:'))
