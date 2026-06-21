@@ -2,7 +2,6 @@ opcao=int(input("=========calculadora=========\n1.soma\n2.subtracao\n3.multiplic
 while opcao not in [1, 2, 3, 4, 5, 6]:
     print("nao é uma opcao")
     opcao=int(input("Digite outro numero para escolher\n1.soma\n2.subtracao\n3.multiplicaçao\n4.divisão\n5.Fluxo de Caixa\n6.Cálculo de posição de queda de um projétil\nEscolha uma das opções:"))
-    
 if opcao==1:
     a=int(input('digite um valor:'))
     b=int(input('outro valor:'))
