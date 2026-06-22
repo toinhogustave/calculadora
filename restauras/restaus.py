@@ -1,19 +1,18 @@
-class cadastro:
-    def __init__(self):
-        self.nome=''
-        self.status=''
-    def dados():
-        self.nome=str((input)("insira o nome:"))
-        self.status=int((input)("insira status:"))
-
+funcionario={'nome': '', 'disponivel': 0}
+listafuncionario=[]
+mesa={'disponivel':0,'prato':''}
+prato=[]
 opcao=int(input("=========restaurante=========\n1.funcionarios\n2.mesas\n3.pratos\n4.cardapios\n5.desligar"))
 while opcao not in [1, 2, 3, 4, 5]:
     print("nao é uma opcao")
     opcao=int(input("Digite outro numero para escolher\n1.funcionarios\n2.mesas\n3.pratos\n4.cardapios\n5.desligar"))
 if opcao==1:
-    fun=(input("1.Para novo funcionario\n2.Status\n3.Alterar status\n4.sair"))
+    while fun not in [4]:
+        fun=(input("1.Para novo funcionario\n2.Status\n3.Alterar status\n4.sair"))
         if fun==1:
-            
+            funcionario['nome']=str((input)("insira o nome:"))
+            funcionario['disponivel']=0
+            listafuncionario.append(funcionario.copy())
         elif fun==2:
         
         elif fun==3:
@@ -21,7 +20,7 @@ if opcao==1:
         elif fun==4:
         
 elif opcao==2:
-    mes=(input("1.Status\n2.A-lterar status\n3.sair"))
+    mes=(input("1.Status\n2.Alterar status\n3.sair"))
         if mes==1:
         
         elif mes==2:
